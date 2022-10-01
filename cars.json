@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota",
+    "passenger": 4,
+    "engine": "Manual",
+    "price": 500,
+    "img": "https://i.im.ge/2022/10/01/1RlzMP.car1.png"
+  },
+  {
+    "id": 2,
+    "name": "Honda",
+    "passenger": 2,
+    "engine": "Automatic",
+    "price": 300,
+    "img": "https://i.im.ge/2022/10/01/1RF2cK.car2.png"
+  },
+  {
+    "id": 3,
+    "name": "Ferrari",
+    "passenger": 2,
+    "engine": "Manual",
+    "price": 770,
+    "img": "https://i.im.ge/2022/10/01/1RFhl4.car3.png"
+  },
+  {
+    "id": 4,
+    "name": "Mclaren",
+    "passenger": 2,
+    "engine": "Automatic",
+    "price": 1200,
+    "img": "https://i.im.ge/2022/10/01/1RFV56.car4.png"
+  },
+  {
+    "id": 5,
+    "name": "Hyundai",
+    "passenger": 4,
+    "engine": "Manual",
+    "price": 300,
+    "img": "https://i.im.ge/2022/10/01/1ROqRT.car5.png"
+  },
+  {
+    "id": 6,
+    "name": "Fiat",
+    "passenger": 4,
+    "engine": "Manual",
+    "price": 660,
+    "img": "https://i.im.ge/2022/10/01/1R1f79.car6.png"
+  }
+]
