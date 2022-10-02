@@ -1,0 +1,244 @@
+.dashPart {
+  padding: 30px;
+  background-color: #f5f5f5;
+  margin: auto;
+}
+
+/* upper */
+
+#energy,
+#range,
+#break,
+#tire {
+  text-align: center;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+#energy {
+  background-color: #a162f7;
+}
+
+#range,
+#break,
+#tire {
+  background-color: white;
+}
+
+#energy img,
+#range img,
+#break img,
+#tire img {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+#energy h3 {
+  color: white;
+}
+
+#energy h3,
+#range h3,
+#break h3,
+#tire h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* middle */
+
+#apply {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #ffe0ba;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#leftApply {
+  width: 50%;
+  height: 100%;
+  padding-top: 70px;
+}
+
+#rightApply {
+  width: 50%;
+  height: 100%;
+}
+
+#rightApply img {
+  width: 100%;
+  height: 100%;
+}
+
+#leftApply h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#leftApply p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#leftApply button {
+  width: 125px;
+  height: 38px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#rightApply img {
+  text-align: right;
+  display: inline-block;
+}
+
+#badges {
+  background-color: #0f2837;
+}
+
+#badges h1,
+#run h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+#badges p {
+  color: #ff9619;
+  font-size: 12px;
+}
+
+#run p {
+  color: #fac39b;
+  font-size: 12px;
+}
+
+#run {
+  background-color: #6e1946;
+}
+
+#badges,
+#run {
+  padding: 30px 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#rewards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rewardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rewardTitle {
+  width: 50%;
+}
+
+.rewardImg {
+  width: 50%;
+}
+
+#badgeNum {
+  color: #ff9619;
+  font-size: 40px;
+}
+
+#runNum {
+  color: #fac39b;
+  font-size: 40px;
+}
+
+/* bottom */
+
+#bottomLeft,
+#bottomMiddle,
+#bottomRight {
+  padding: 15px 25px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+#bottomLeft {
+  background-color: #e1dfa4;
+}
+#bottomMiddle {
+  background-color: #e3ecf1;
+}
+#bottomRight {
+  background-color: #f4e3e5;
+}
+
+#bottomLeft svg,
+#bottomMiddle svg,
+#bottomRight svg {
+  display: inline-block;
+  color: #72767c;
+}
+
+#bottomLeft h5,
+#bottomMiddle h5,
+#bottomRight h5 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+#bottomLeft span,
+#bottomMiddle span,
+#bottomRight span {
+  color: #72767c;
+  font-weight: 500;
+}
+
+#bottomLeft h4,
+#bottomMiddle h4,
+#bottomRight h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.iconContainer {
+  display: inline-block;
+  width: 50%;
+}
+
+.iconPrice {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+
+.marginRight {
+  margin-right: 11px;
+}

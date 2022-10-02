@@ -1,7 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Nav from "./components/Nav";
 import LeftSide from "./components/LeftSide";
 import Cars from "./components/Cars";
@@ -34,7 +34,6 @@ function App() {
             <Route path="/" element={<Cars cars={cars} />} />
             <Route path="dashboard" element={<DashBoard />} />
           </Routes>
-          {/* <Cars cars={cars} /> */}
         </div>
       </BrowserRouter>
     </div>
