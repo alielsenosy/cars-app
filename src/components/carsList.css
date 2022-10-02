@@ -1,0 +1,39 @@
+#carName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#coupe {
+  color: #72767c;
+  font-size: 16px;
+}
+
+#passIcon svg,
+#engineIcon svg {
+  display: inline-block;
+  color: #a162f7;
+}
+
+#passIcon,
+#engineIcon {
+  color: #72767c;
+}
+
+#passIcon {
+  margin-right: 20px;
+}
+
+#carItem {
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+#carPrice {
+  font-size: 18px;
+  font-weight: 500;
+}

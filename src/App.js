@@ -1,7 +1,11 @@
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
+import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
+import Nav from "./components/Nav";
+import LeftSide from "./components/LeftSide";
+import Cars from "./components/Cars";
+import DashBoard from "./components/DashBoard";
 
 function App() {
   const [cars, setCars] = useState([]);
@@ -12,8 +16,29 @@ function App() {
       .then((res) => setCars(res.data));
   }, []);
 
-  console.log(cars);
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <div
+          className="left"
+          style={{ display: "inline-block", width: "20%", height: "100vh" }}
+        >
+          <LeftSide />
+        </div>
+        <div
+          className="right"
+          style={{ display: "inline-block", width: "80%" }}
+        >
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Cars cars={cars} />} />
+            <Route path="dashboard" element={<DashBoard />} />
+          </Routes>
+          {/* <Cars cars={cars} /> */}
+        </div>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

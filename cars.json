@@ -5,7 +5,7 @@
     "passenger": 4,
     "engine": "Manual",
     "price": 500,
-    "img": "https://i.im.ge/2022/10/01/1RlzMP.car1.png"
+    "img": "https://i.im.ge/2022/10/02/1REXV1.car1.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "passenger": 2,
     "engine": "Automatic",
     "price": 300,
-    "img": "https://i.im.ge/2022/10/01/1RF2cK.car2.png"
+    "img": "https://i.im.ge/2022/10/02/1RErlf.car2.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "passenger": 2,
     "engine": "Manual",
     "price": 770,
-    "img": "https://i.im.ge/2022/10/01/1RFhl4.car3.png"
+    "img": "https://i.im.ge/2022/10/02/1REu0m.car3.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "passenger": 2,
     "engine": "Automatic",
     "price": 1200,
-    "img": "https://i.im.ge/2022/10/01/1RFV56.car4.png"
+    "img": "https://i.im.ge/2022/10/02/1REFgr.car4.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "passenger": 4,
     "engine": "Manual",
     "price": 300,
-    "img": "https://i.im.ge/2022/10/01/1ROqRT.car5.png"
+    "img": "https://i.im.ge/2022/10/02/1REbdq.car5.png"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "passenger": 4,
     "engine": "Manual",
     "price": 660,
-    "img": "https://i.im.ge/2022/10/01/1R1f79.car6.png"
+    "img": "https://i.im.ge/2022/10/02/1RE2D0.car6.png"
   }
 ]
