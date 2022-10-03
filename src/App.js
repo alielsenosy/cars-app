@@ -16,20 +16,22 @@ function App() {
       .then((res) => setCars(res.data));
   }, []);
 
+  const [arabicClass, setArabicClass] = useState(false);
+  const handleLanguage = () => {
+    arabicClass === true ? setArabicClass(false) : setArabicClass(true);
+  };
+
   return (
-    <div className="App">
+    <div
+      className={`App ${arabicClass ? "arabicContainer" : ""}`}
+      style={{ display: "flex" }}
+    >
       <BrowserRouter>
-        <div
-          className="left"
-          style={{ display: "inline-block", width: "20%", height: "100vh" }}
-        >
+        <div className="left" style={{ width: "20%" }}>
           <LeftSide />
         </div>
-        <div
-          className="right"
-          style={{ display: "inline-block", width: "80%" }}
-        >
-          <Nav />
+        <div className="right" style={{ width: "80%" }}>
+          <Nav language={handleLanguage} langText={arabicClass} />
           <Routes>
             <Route path="/" element={<Cars cars={cars} />} />
             <Route path="dashboard" element={<DashBoard />} />

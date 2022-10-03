@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Example(props) {
   return (
     <Disclosure as="nav" className="bg-white-800">
       {({ open }) => (
@@ -25,7 +25,7 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:block">
                   <div className="relative mt-1 rounded-md shadow-sm">
                     <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 ">
                       <span className="text-gray-500 sm:text-sm">
@@ -56,6 +56,15 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  onClick={props.language}
+                  style={{
+                    fontWeight: "bold",
+                    marginRight: "10px",
+                  }}
+                >
+                  {props.langText ? "En" : "Ar"}
+                </button>
                 <button
                   type="button"
                   className="rounded-full bg-whit-800 p-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"

@@ -1,0 +1,12 @@
+.arabicContainer {
+  direction: rtl;
+}
+
+.arabicContainer #booking {
+  text-align: right;
+}
+
+.arabicContainer #adjIcon {
+  margin-left: unset;
+  margin-right: 10px;
+}

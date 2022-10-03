@@ -32,6 +32,7 @@ const Cars = (props) => {
           <option value="Manual">Manual</option>
           <option value="Automatic">Automatic</option>
         </select>
+
         <div>
           <span className="rightIcons" id="squareIcon">
             <svg
@@ -73,7 +74,7 @@ const Cars = (props) => {
       <div className="mx-auto max-w-2xl py-1 px-0 sm:py-2 sm:px-0 lg:max-w-7xl lg:px-0 ">
         <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {filteredList.map((car, index) => (
-            <div key={car.id} id="carItem">
+            <div key={index} id="carItem">
               <div className="flex justify-between">
                 <h5 id="carName">{car.name}</h5>
                 <svg
