@@ -1,20 +1,36 @@
 import "./cars.css";
+import { useState, useMemo } from "react";
 
 const Cars = (props) => {
-  // console.log(props.cars);
+  const [selectedEngine, setSelectedEngine] = useState();
+
+  function handleCategoryChange(event) {
+    setSelectedEngine(event.target.value);
+  }
+
+  function getFilteredList() {
+    if (!selectedEngine) {
+      return props.cars;
+    }
+    return props.cars.filter((car) => car.engine === selectedEngine);
+  }
+
+  var filteredList = useMemo(getFilteredList, [selectedEngine, props.cars]);
+
   return (
     <div className="cars">
       <h1 id="booking">Booking</h1>
       <div className="flex justify-between">
         <select
+          onChange={handleCategoryChange}
           id="country"
           name="country"
           autoComplete="country-name"
           className="mt-1 rounded-md border border-gray-300 bg-white py-2 pr-12 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
         >
-          <option>All</option>
-          <option>Manual</option>
-          <option>Automatic</option>
+          <option value="">All</option>
+          <option value="Manual">Manual</option>
+          <option value="Automatic">Automatic</option>
         </select>
         <div>
           <span className="rightIcons" id="squareIcon">
@@ -56,7 +72,7 @@ const Cars = (props) => {
 
       <div className="mx-auto max-w-2xl py-1 px-0 sm:py-2 sm:px-0 lg:max-w-7xl lg:px-0 ">
         <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {props.cars.map((car) => (
+          {filteredList.map((car, index) => (
             <div key={car.id} id="carItem">
               <div className="flex justify-between">
                 <h5 id="carName">{car.name}</h5>
